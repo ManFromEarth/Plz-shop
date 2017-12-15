@@ -20,4 +20,4 @@
 <image src="./admin-screenshots/QQ截图003.png" width=960px height=475px />    <img src="./admin-screenshots/QQ截图004.png" width=960px height=475px />
 <image src="./admin-screenshots/QQ截图005.png" width=960px height=475px />    <img src="./admin-screenshots/QQ截图006.png" width=960px height=475px />
 <image src="./admin-screenshots/QQ截图007.png" width=960px height=475px />    <img src="./admin-screenshots/QQ截图008.png" width=960px height=475px />
-<image src="./admin-screenshots/QQ截图009.png" width=960px height=475px />    <img src="./admin-screenshots/QQ截图010.png" width=960px height=475px />
+<image src="./admin-screenshots/QQ截图009.png" width=960px height=475px />    
