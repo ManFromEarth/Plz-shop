@@ -5,8 +5,8 @@
 
 #####项目截图
 <div style="text-align:center;">
-  <img url="./app-screenshots/IMG_001.PNG" style="width=40%;"></img>
-  <img url="./app-screenshots/IMG_002.PNG" style="width=40%;"></img>
+  <image url="./app-screenshots/IMG_001.PNG" style="width=40%;"></imege>
+  <img src="./app-screenshots/IMG_002.PNG" style="width=40%;"></img>
 </div>
  <div style="text-align:center;">
    <img url="./app-screenshots/IMG_003.PNG" style="width=40%;"></img>
