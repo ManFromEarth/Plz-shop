@@ -5,7 +5,7 @@
 
 ###### 项目截图
 <div text-align:center >
-    <image src="./app-screenshots/IMG_001.PNG"width=40% margin-right=30px /> <img src="./app-screenshots/IMG_002.PNG" width=40% />
+    <image src="./app-screenshots/IMG_001.PNG"width=40% margin-right=30 /> <img src="./app-screenshots/IMG_002.PNG" width=40% />
 </div>
 </div>
  <div style="text-align:center;">
