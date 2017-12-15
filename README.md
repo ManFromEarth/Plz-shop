@@ -28,5 +28,5 @@
     <img src="./app-screenshots/IMG_011.PNG" style="width=40%;"></img>
     <img src="./app-screenshots/IMG_012.PNG" style="width=40%;"></img>
   </div>
-  <img src="./app-screenshots/IMG_011.PNG"  width = "300"  alt="图片名称" align=center></img>
-    <img src="./app-screenshots/IMG_012.PNG"  width = "300"  alt="图片名称" align=center></img>
+   <img src="./app-screenshots/IMG_011.PNG"  width = "300"  alt="图片名称" align=center style="display:inline-block;"></img>
+    <img src="./app-screenshots/IMG_012.PNG"  width = "300"  alt="图片名称" align=center style="display:inline-block;"></img>
