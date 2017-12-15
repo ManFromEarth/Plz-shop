@@ -1,3 +1,6 @@
 ## 品丽州微信小程序前端
 
-![项目截图](./app-screenshots/IMG_001.PNG)
+<div>
+<img src="./app-screenshots/IMG_001.png" alt="项目截图"></img>
+
+</div>
