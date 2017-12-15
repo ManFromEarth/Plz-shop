@@ -4,8 +4,9 @@
 * ger
 
 ###### 项目截图
-<div style="text-align:center;display:flex;">
-  <image src="./app-screenshots/IMG_001.PNG" style="width=40%;"></image> <img src="./app-screenshots/IMG_002.PNG" style="width=40%;"></img>
+<div text-align:center >
+  <image src="./app-screenshots/IMG_001.PNG"width=40% /> <img src="./app-screenshots/IMG_002.PNG" width=40% />
+</div>
 </div>
  <div style="text-align:center;">
    <img src="./app-screenshots/IMG_003.PNG" style="width=40%;"></img> <img src="./app-screenshots/IMG_004.PNG" style="width=40%;"></img>
