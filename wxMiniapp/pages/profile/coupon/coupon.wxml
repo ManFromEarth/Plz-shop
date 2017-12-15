@@ -1,0 +1,31 @@
+<view class="noCouponwrap" wx:if="{{!coupon}}">  
+  <view class="noCoupon">
+    <view class='circleBg'>
+      <image src='../../../imgs/holder/noCoupon.png' style='width:110rpx;height:80rpx;'></image>
+    </view>
+    <view>当前没有优惠券</view>
+  </view>
+</view>
+<view wx:else>
+  <view class="coupon" wx:for="{{coupon}}">
+    <view class='coupon-top'>
+      <view class="sum">
+        <view class='symbol'>¥</view>
+        <view class='sum-no' wx:if="{{item.ReduceAmount!==0}}">{{item.ReduceAmount}}</view>
+        <view class='sum-no' wx:if="{{item.Amount!==0}}">{{item.Amount}}</view>
+      </view>
+      <view class='dec'>
+        <view>{{'品丽州'+item.ReduceAmount+'元优惠券'}}</view>
+        <view class='full'>
+          <text>1.</text>
+          <text>{{'满'+item.FullAmount+'元可用'}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='dashed'></view>
+    <view class='validity'>
+      <text>有效期至：</text>
+      <text>{{item.EndTime}}</text>
+    </view>
+  </view>
+</view>

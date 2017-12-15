@@ -1,0 +1,100 @@
+page {
+  padding-bottom: 98rpx;
+  box-sizing: border-box;
+}
+
+.bottom {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 98rpx;
+  border-top: 1rpx #e5e5e3 solid;
+  display: flex;
+  padding-left: 20rpx;
+}
+
+.carouselCover {
+  height: 500rpx;
+}
+
+.boookcontent {
+  margin-bottom: 96rpx;
+  overflow: hidden;
+  padding: 0 40rpx;
+}
+
+.cookhead {
+  height: 160rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-bottom: 1rpx #e5e5e3 solid;
+}
+
+.cooktips {
+  display: flex;
+}
+
+.cookname {
+  font-size: 40rpx;
+  color: #4a4a45;
+  margin: 30rpx 0 40rpx;
+}
+
+.collectes {
+  margin-right: 20rpx;
+}
+
+.publisher {
+  display: flex;
+  height: 190rpx;
+  align-items: center;
+  margin: 0 40rpx;
+}
+
+.detail-cell {
+  padding: 40rpx;
+  border-bottom: 1rpx #e5e5e3 solid;
+}
+
+.share-button{
+  width: 160rpx;
+  margin: 0;
+  padding: 0;
+}
+.share-button::after{
+  content: none;
+}
+.Materials{
+  border-bottom: 1rpx #e5e5e3 solid;
+  padding: 10rpx 0;
+}
+.cell-title{
+  font-size: 28rpx;
+  color: #4a4a45;
+  margin-bottom: 20rpx;
+}
+.procedure{
+  border-bottom: 1rpx #e5e5e3 solid;
+  padding: 22rpx 0;
+}
+.wonder{
+  width: 140rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+
+  
+}
+.shortnav{
+   background-color: #ff4a91;
+   flex: 1;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+}
+

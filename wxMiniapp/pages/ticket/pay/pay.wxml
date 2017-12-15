@@ -1,0 +1,60 @@
+<view class='post'> 
+  <view class='postDesc'>送至：</view>
+  <view class='postAdress'>{{defaultAdress.Pcadress}}</view>
+</view>
+<view class='cartlist'>
+  <view class='order-title'>订单详情</view>
+  <view wx:for="{{carlist}}" class="proItem {{index===carlist.length-1?'noboderPro':''}}">
+    <view>
+      <view>{{item.Title}}</view>
+      <view>{{item.standar.StandardName}}</view>
+    </view>
+    <view>
+      <view>{{'¥'+item.standar.Price}}</view>
+      <view class='isbuyNum'>{{'×'+item.isbuy}}</view>
+    </view>
+  </view>
+</view>
+<view class="amount">
+  <view class="amount-cell">
+    <view class="left-cell">商品总价</view>
+    <view class="">{{'¥'+account.totalAmount}}</view>
+  </view>
+  <view class="amount-cell">
+    <image src='../../../imgs/marks/packet.png' style='width:37rpx; height:35rpx;margin-right:4rpx;'></image>
+    <view class="left-cell">优惠券</view>
+    <view class="">
+      <view class="con-arrow" wx:if="{{account.usecoupon.reducenum!==0}}" url="./chooseCoupon/chooseCoupon">{{'¥'+account.usecoupon.reducenum}}</view>
+      <view class="gray" wx:else>无优惠券可用</view>
+    </view>
+  </view>
+  <view class="amount-cell">
+    <view class="left-cell">运费</view>
+    <view class="" wx:if="{{account.postcost===0}}">免配送费</view>
+    <view class="" wx:else>{{'¥'+account.postcost}}</view>
+  </view>
+  <view class="amount-cell">
+    <view class="left-cell">品丽州余额</view>
+    <view class="">{{'¥'+account.usebalance}}</view>
+  </view>
+  <view class="amount-cell amount-cell-no">
+    <view>还需支付</view>
+    <view class='wxPayAmount'>{{'¥'+account.wxPay}}</view>
+  </view>
+</view>
+<view class="accounts">
+  <view class="accountsL">
+    <view>
+      <view class="totalprice">
+        <text>需支付</text>
+        <text class="redprice">{{'¥'+account.wxPay}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="accountsR">
+    <form bindsubmit='goWxPay' report-submit>
+      <button form-type='submit' class='payBtn'>去支付</button>
+    </form>
+    <view class="arrowright"></view>
+  </view>
+</view>

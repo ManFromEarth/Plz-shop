@@ -1,0 +1,98 @@
+<scroll-view wx:if="{{carlist.length!==0}}" class='cartView' scroll-y>   
+  <navigator class="activePost" url='../index/delive/delive' wx:if="{{carlist.length!==0}}">
+    <image src="../../imgs/icon/adress.gif" style="height:34rpx;width:30rpx;"></image>
+    <view class='posttxt' wx:if="{{defaultAdress}}">
+      <view>送至:</view>
+      <view class="Pcadress">{{defaultAdress.Pcadress}}</view>
+    </view>
+    <view wx:else class='posttxt'>请选择收货地址</view>
+    <image src='../../imgs/icon/arrow.gif' style='width:17rpx;height:28rpx;margin-bottom:4rpx;'></image>
+  </navigator>
+  <navigator open-type='navigate'>
+    <image src='../../imgs/test/carBener.jpg' class='carBaner'></image>
+  </navigator>
+  <view class="middle">
+    <view class="delivery">
+      <view class="postcost">
+        <view class='labcircle'>
+          <view class='labelId'></view>
+        </view>
+        <view class="">2小时达</view>
+      </view>
+      <navigator class="delivery-r" url='../index/index' open-type='switchTab' hover-class='none'>
+        <view class="" wx:if="{{arrear===0}}">{{'已满'+postage+'免运费'}}</view>
+        <view wx:else>{{'含优惠券满'+postage+'包邮，还差'+arrear+'元，去凑单'}}</view>
+        <image src='../../imgs/icon/arrow.gif' style='width:17rpx; height:28rpx; margin-left:14rpx;'></image>
+      </navigator>
+    </view>
+    <view class="productwrap">
+      <view class="singelP" wx:for="{{carlist}}" wx:key="*this">
+        <image src="{{item.ImgCover}}"  class='pro-cover'></image>
+        <view class="sinR">
+          <view class="iName">{{item.Title}}</view>
+          <view class="iTips" wx:if="{{item.Tips}}">
+            <view class="iTipscell">{{item.Tips}}</view>
+          </view>
+          <view class="specs">
+            <view class="specs-title">规格:</view>
+            <view class="specs-desc">{{item.standar.StandardName}}</view>
+          </view>
+          <view class="iPrice">
+            <view class="priceL">单价¥</view>
+            <view class="priceR">{{item.standar.Price}}</view>
+          </view>
+        </view>
+        <view class="hasthing">
+          <image catchtap="deltnum" data-index="{{index}}" src="../../imgs/icon/det1.jpg" style="height:46rpx; width:46rpx;"></image>
+          <view class="">{{item.isbuy}}</view>
+          <image catchtap="addnum" data-index="{{index}}" src="../../imgs/icon/add1.jpg" style="height:46rpx; width:46rpx;"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="amount">
+    <view class="amount-cell">
+      <view class="left-cell">商品总价</view>
+      <view class="">{{'¥'+account.totalAmount}}</view>
+    </view>
+    <view class="amount-cell">
+      <image src='../../imgs/marks/packet.png' style='width:37rpx; height:35rpx;margin-right:4rpx;'></image>
+      <view class="left-cell">优惠券</view>
+      <view class="">
+        <view class="con-arrow" wx:if="{{account.usecoupon.reducenum!==0}}" url="./chooseCoupon/chooseCoupon">{{'¥'+account.usecoupon.reducenum}}</view>
+        <view class="gray" wx:else>无优惠券可用</view>
+      </view>
+    </view>
+    <view class="amount-cell">
+      <view class="left-cell">运费</view>
+      <view class="" wx:if="{{account.postcost===0}}">免配送费</view>
+      <view class="" wx:else>{{'¥'+account.postcost}}</view>
+    </view>
+    <view class="amount-cell">
+      <view class="left-cell">品丽州余额</view>
+      <view class="">{{'¥'+account.usebalance}}</view>
+    </view>
+    <view class="amount-cell amount-cell-no ">
+      <view >还需支付</view>
+      <view class='wxPayAmount'>{{'¥'+account.wxPay}}</view>
+    </view>
+  </view>
+  <view class="accounts">
+    <view class="accountsL">
+      <view class="totalprice">
+        <text>合计</text>
+        <text class="redprice">{{'¥'+account.wxPay}}</text>
+      </view>
+    </view>
+    <view class="accountsR" catchtap="goBill">
+      <view class="accountcell">去结算</view>
+      <view class="arrowright"></view>
+    </view>
+  </view>
+</scroll-view>
+<view wx:else class="blank">
+  <view class='car-blank-wrap'>
+    <image src='../../imgs/icon/car-blank.png'></image>
+  </view>
+  <view class='car-blank-desc'>你的购物车是空的</view>
+</view>

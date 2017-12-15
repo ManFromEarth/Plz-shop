@@ -1,0 +1,54 @@
+<view wx:if="{{purchased.length!==0}}"> 
+  <view>
+    <view class="purchased" wx:for="{{purchased}}" wx:key='OrderId'>
+      <view class="order-head">
+        <image src="../../../imgs/marks/plz_logo.jpg" style="width:73rpx;height:74rpx;margin-right:20rpx;"></image>
+        <view class="timemark">
+          <view class="">浙江品丽州食品</view>
+          <view class="timemark-cell">{{item.CreateTime}}</view>
+        </view>
+        <view class="Status-wrap">
+          <view class="orderStatus">
+            <view>{{item.StatusText}}</view>
+          </view>
+          <view class="orderid">
+            <view>订单号:</view>
+            <text selectable="true">{{item.OrderCode}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='middle-wrap'>
+        <view class="product-list">
+          <view class="product-cell" wx:for="{{item.list}}">
+            <view class="product-name">{{item.ProductName}}</view>
+            <view class='product-Standar'>{{item.StandardName}}</view>
+            <view class="product-No">{{'×'+item.ProductNum}}</view>
+            <view class="product-Price">{{'¥'+item.ProducuPrice}}</view>
+          </view>
+        </view>
+        <view wx:if="{{item.UsedCoupon!==0}}" class='UsedCoupon'>{{'使用优惠券:¥'+item.UsedCoupon}}</view>
+        <view wx:if="{{item.UsedCash!==0}}" class='UsedCash'>{{'余额:¥'+item.UsedCash}}</view>
+        <view class="trupay">
+          <view>实付:</view>
+          <view class="payway">{{'¥'+item.AmoutPaid}}</view>
+        </view>
+      </view>
+      <view class="geat">
+        <view class='control-button' wx:if="{{item.Status===2}}" data-idx='{{index}}' catchtap='regoods'>
+          申请退货
+        </view>
+        <view class="control-button" wx:if="{{item.Status===5}}">
+          <navigator wx:if="{{item.IsComment===0}}" hover-class='none' open-type='navigateTo'>评价得积分</navigator>
+          <view wx:else>已评价</view>
+        </view>
+        <view wx:if="{{item.Status===1||item.Status===7||item.Status===5}}" catchtap='deltOrder' data-idx='{{index}}' class='control-button'>删除订单</view>
+        <view wx:if="{{item.Status===1}}" catchtap='gopay' data-idx='{{index}}' class='control-button'>去支付</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class='blank-page'>
+  <image src='../../../imgs/holder/no_order.gif' class='no_order'></image>
+  <view class='blank-desc'>还没有订单</view>
+  <navigator url='../../index/index' class='goindex' open-type='switchTab' hover-class='none'>去逛逛</navigator>
+</view>

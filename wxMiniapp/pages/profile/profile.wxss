@@ -1,0 +1,218 @@
+@import "../../common/toast/wetoast.wxss";
+page {
+  background-color: #f5f5f5;
+}
+
+.head {
+  background-color: #fff;
+  font-size: 26rpx;
+}
+
+.user-info {
+  color: #fff;
+  background-color: #ff4a91;
+  flex-flow: row nowrap;
+  display: flex;
+  flex: 1;
+  height: 210rpx;
+  align-items: center;
+  padding-left: 40rpx;
+}
+
+.user-leve {
+  display: flex;
+  align-items: center;
+}
+
+.user-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.avatar {
+}
+
+.nickName {
+  width: 140rpx;
+  font-size: 28rpx;
+}
+
+.prewarp {
+  margin-top: 20rpx;
+}
+
+.premenu {
+  height: 88rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx #e5e5e5 solid;
+  padding: 0 38rpx;
+}
+
+.contact {
+  margin-top: 20rpx;
+}
+
+.noborder {
+  border-bottom: none;
+}
+
+.title {
+  margin-left: 32rpx;
+  flex: 1;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.invite {
+  height: 100rpx;
+  background-color: #fff;
+  padding: 0 38rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invite-left {
+  display: flex;
+  align-items: center;
+}
+
+.invite-sign {
+  margin-right: 16rpx;
+}
+
+.invite-left .left-black {
+}
+
+.invite-left .left-red {
+  color: #fff;
+  background-color: red;
+}
+
+.invite-rig {
+  display: flex;
+  align-items: center;
+}
+
+.gary {
+  color: #babbba;
+}
+
+.signtxt {
+  border-radius: 6rpx;
+  font-size: 26rpx;
+  padding: 0 4rpx;
+}
+
+.sharebutton {
+  font-size: 24rpx;
+  border: none;
+  line-height: normal;
+  background-color: #fff;
+  position: inherit;
+  padding: 6rpx 0;
+}
+
+.sharebutton::after {
+  content: none;
+}
+
+.exchange {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 40rpx;
+}
+
+.user-grade {
+  display: flex;
+  align-items: center;
+}
+
+.degree-symbol {
+  background-color: #ff4a91;
+  width: 32rpx;
+  height: 28rpx;
+  display: block;
+}
+
+.scale {
+  height: 12rpx;
+  background-color: #e7867f;
+  width: 260rpx;
+  border-radius: 10rpx;
+  margin-top: 16rpx;
+  margin-bottom: 4rpx;
+}
+
+.degree-wrap {
+  display: flex;
+}
+
+.degree-wrap .symbol {
+  position: relative;
+}
+
+.symbol-nums {
+  font-size: 20rpx;
+  color: #fff;
+  position: absolute;
+  left: 4rpx;
+  top: 2rpx;
+}
+
+.scale-fill {
+  height: 10rpx;
+  background-color: #eae890;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  align-items: center;
+}
+
+.head-right {
+  height: 160rpx;
+  background-color: #fff;
+  border-bottom: 1rpx #e5e5e5 solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvalue {
+  color: #f7e252;
+}
+
+.quickcell {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx #e5e5e5 solid;
+}
+
+.little {
+  font-size: 20rpx;
+  margin-left: 4rpx;
+  margin-bottom: 8rpx;
+}
+
+.quick-top {
+  color: #eb508b;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+}
+
+.vipType {
+  margin-top: 14rpx;
+}

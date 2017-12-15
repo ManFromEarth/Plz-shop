@@ -1,0 +1,21 @@
+<view class='exMoney'>   
+   <input class='code-input' placeholder='请输入现金兑换码' maxlength='8' confirm-type='send' bindblur='exsend' bindconfirm='exsend'></input>
+   <view class='ex-button'>兑换</view>
+</view> 
+<view class="balance">
+  <view class='balance-title'>我的余额(元)</view>
+  <view class='balance-nums'>{{balance}}</view>
+</view>
+<view class="putIn" wx:if="{{quotas.length}}">
+  <view class='sum-title'>办理</view>
+  <view class='sum'>
+    <view wx:for="{{quotas}}"  class="sum-cell {{currentIndex===index?'active-sum-cell':''}}" catchtap='choosequotas' id='{{index}}'>
+      <view class='sum-cell-in'>{{item.LevelName}}</view>
+      <view class='sum-cell-away'>{{item.NeedAmount+'元'}}</view>
+    </view>
+  </view>
+  <view class='vipGift'>
+   <view class='vipGift-desc'>{{'品丽州购物'+quotas[currentIndex].Discount+'折'+'+'+quotas[currentIndex].SendGift}}</view>  
+  </view>
+</view>
+<button class='putin-button' catchtap='goPutin'>立即办理</button>

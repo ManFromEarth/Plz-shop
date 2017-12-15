@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit"> 
+  <view class="sin-cell">
+    <view class="title-cell first-title-cell">收货人</view>
+    <input placeholder="{{placeHold.name}}" value="{{placeValue.name}}" name="name"  class='gray' />
+  </view>
+  <view class="sin-cell">
+    <view class="title-cell">联系电话</view>
+    <input placeholder="{{placeHold.tel}}" value="{{placeValue.tel}}" type="number" name="tel"  class='gray'/>
+  </view>
+  <view class="sin-cell">
+    <view class="title-cell">选择县市</view>
+    <view bindtap="selectcity" class='holdColor'>
+      <text wx:if="{{placeValue.city}}">{{placeValue.city}}</text>
+      <text wx:else>请输入你的收货城市</text>
+    </view>
+  </view>
+  <view class="sin-cell">
+    <view class="title-cell">收货地址</view>
+    <view catchtap="navTosearchpoi" class='holdColor'>
+      <text wx:if="{{placeValue.adress}}">{{placeValue.adress}}</text>
+      <text wx:else>请输入你的收货地址</text>
+    </view>
+  </view>
+  <view class="sin-cell">
+    <view class="title-cell">楼号门牌</view>
+    <input placeholder="{{placeHold.Housenumber}}" value="{{placeValue.Housenumber}}" name="Housenumber" class='gray'/>
+  </view>
+  <button class="submit" form-type="submit">保存</button>
+</form>

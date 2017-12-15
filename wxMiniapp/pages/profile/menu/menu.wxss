@@ -1,0 +1,34 @@
+.menucell{
+  padding: 20rpx 0;
+  border-bottom: 1rpx #E5E5E3 solid;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.menucover{
+  width: 140rpx;
+  height: 120rpx;
+  margin-left: 40rpx;
+  border-radius: 12rpx;
+}
+.menuRight{
+  margin-left: 20rpx;
+
+}
+.avatar{
+  width:30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  margin-left: 6rpx;
+  margin-right: 20rpx;
+}
+.menu-desc{
+  font-size: 26rpx;
+  line-height: 26rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 22rpx;
+}
+.menuName{
+  font-size: 30rpx;
+}

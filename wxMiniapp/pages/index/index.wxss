@@ -1,0 +1,297 @@
+.pagehead { 
+  padding-top: 16rpx;
+  box-sizing: border-box;
+  height: 14%;
+  border-top: 1rpx #e5e5e5 solid;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  font-size: 30rpx; 
+  align-items: center;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+}
+
+.currentp {
+  width: 200rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+}
+
+.timeline {
+  margin-right: 8rpx;
+}
+
+.barrow {
+  font-size: 0;
+  line-height: 0;
+  border-width: 10rpx;
+  border-color: #262626;
+  border-bottom-width: 0;
+  border-style: dashed;
+  border-top-style: solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  align-self: center;
+}
+
+.shoptabs {
+  margin: 0 20rpx;
+  white-space: nowrap;
+}
+
+.tabcell {
+  border-bottom: 6rpx solid transparent;
+  font-size: 28rpx;
+  color: #383838;
+  display: inline-block;
+  margin: 0 20rpx;
+  padding-bottom: 10rpx;
+}
+
+.activetap {
+  border-bottom: 6rpx solid #ff4a91;
+  color: #ff4a91;
+}
+
+.bolckR {
+  height: 20rpx;
+  background-color: #f5f5f5;
+}
+
+.swiper {
+  box-sizing: border-box;
+  height: 86%;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.singelP {
+  height: 310rpx;
+  margin: 0 30rpx;
+  display: flex;
+  border-bottom: 1rpx #e5e5e5 solid;
+  align-items: center;
+  position: relative;
+}
+
+.iName {
+  font-size: 30rpx;
+  margin-bottom: 14rpx;
+}
+
+.iDetail {
+  font-size: 24rpx;
+  color: #969696;
+  margin-top: 10rpx;
+}
+
+.iTips {
+  display: flex;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+  color: #c9c9c9;
+}
+
+.iTipscell {
+  padding: 4rpx;
+  border-radius: 8rpx;
+  border: 1rpx #c6c6c6 solid;
+  margin-right: 8rpx;
+}
+
+.iPrice {
+  display: flex;
+  color: #ff4a91;
+  margin-top: 12rpx;
+  align-items: flex-end;
+}
+
+.priceL {
+  font-size: 22rpx;
+}
+
+.priceR {
+  font-size: 36rpx;
+  line-height: 36rpx;
+  margin-left: 6rpx;
+}
+
+.buymark {
+  position: absolute;
+  right: 0;
+  bottom: 70rpx;
+}
+
+.hasthing {
+  display: flex;
+  justify-content: space-between;
+  width: 148rpx;
+  position: absolute;
+  right: 0;
+  bottom: 30rpx;
+}
+
+.pop-title {
+  text-align: center;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.pop-spec-desc {
+  font-size: 26rpx;
+  color: #9c9c9c;
+}
+
+.mask {
+  z-index: 99;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #363636;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+.pop-spec {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -290rpx;
+  margin-top: -180rpx;
+  width: 580rpx;
+  background-color: #fff;
+  color: #2f2f2f;
+  z-index: 100;
+  border-radius: 14rpx;
+}
+
+.pop-spec-top {
+  padding: 40rpx 28rpx 32rpx;
+}
+
+.pop-spec-cell {
+  color: #989898;
+  padding: 16rpx 22rpx;
+  background-color: #eff5f9;
+  margin: 10rpx 10rpx;
+  border-radius: 6rpx;
+  font-size: 30rpx;
+}
+
+.pop-spec-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 14rpx 0 30rpx;
+}
+
+.pop-bot {
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+  height: 112rpx;
+  border-radius: 0 0 14rpx 14rpx;
+}
+
+.pop-price {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  margin-left: 30rpx;
+}
+
+.taped {
+  color: #fd6a63;
+}
+
+.choose-button {
+  color: #fff;
+  width: 252rpx;
+  height: 72rpx;
+  background-color: #ff4991;
+  line-height: 72rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  margin-right: 28rpx;
+}
+
+.chasign-wrap {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.chasign {
+  display: inline-block;
+  width: 40rpx;
+  height: 2px;
+  background: #dbdbdb;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+  transform: rotate(45deg);
+}
+
+.chasign:after {
+  content: '/';
+  display: block;
+  width: 40rpx;
+  height: 2px;
+  background: #dbdbdb;
+  transform: rotate(-90deg);
+}
+
+.symbol {
+  font-size: 22rpx;
+  color: #888;
+  align-self: flex-end;
+  margin-bottom: 4rpx;
+}
+
+.pop-price-txt {
+  color: #888;
+  font-size: 40rpx;
+  line-height: 40rpx;
+}
+
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  margin-left: -279rpx;
+  margin-top: -410rpx;
+}
+
+.reshopBar {
+  margin-left: 40rpx;
+  font-size: 26rpx;
+}
+
+.ImgCover {
+  width: 210rpx;
+  height: 210rpx;
+  margin-right: 44rpx;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,49 @@
+page{
+  background-color: #F5F5F5;
+}
+.wrap{
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14rpx;
+
+}
+.search{
+  box-sizing: border-box;
+  font-size: 30rpx;
+  width:692rpx;
+  height: 62rpx;
+  background-color: #E6E6E6;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 28rpx;
+}
+.search icon{
+  margin-right: 10rpx;
+}
+.search input{
+  flex: 1;
+}
+.result-wrap{
+  background-color: #fff;
+}
+.poi-cell{
+  height: 146rpx;
+  border-top: 2rpx #E5E5E5 solid;
+  padding-left: 30rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.poi-title{
+  font-size: 34rpx;
+  font-weight: bold;
+
+}
+.poi-address{
+  font-size: 28rpx;
+
+}

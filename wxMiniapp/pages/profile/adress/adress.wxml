@@ -1,0 +1,28 @@
+<view class="noadress" wx:if="{{adress.length==0}}">
+  你还没有收货地址，请添加地址
+</view>
+<view class="adwarp" wx:for="{{adress}}">
+  <view class="topadress">
+    <view class="topw">{{item.City+' '+item.Pcadress+' '+item.DetailAddress}}</view>
+    <view class="behw">{{item.UserName+' '+item.TelNumber}}</view>
+  </view>
+  <view class="control">
+    <view class="defalut" data-id="{{item.Id}}" bindtap="defaultchange">
+      <icon type="success" size="20" color="{{item.IsDefault?'red':'rgb(220,220,220)'}}" />
+      <view class="defw">默认</view>
+    </view>
+    <view class="last-control">
+      <navigator class="edit" url="./editAdress/editAdress?name={{item.UserName}}&tel={{item.TelNumber}}&city={{item.City}}&adress={{item.Pcadress}}&Housenumber={{item.DetailAddress}}&Id={{item.Id}}">
+        <image src="../../../imgs/icon/editAdress.gif" style="width:28rpx;height:28rpx;"></image>
+        <view class="editw">编辑</view>
+      </navigator>
+      <view class="del" data-id="{{item.Id}}" bindtap="deladress">
+        <image src="../../../imgs/icon/delAdress.gif" style="width:26rpx;height:30rpx;"></image>
+        <view class="delw">删除</view>
+      </view>
+    </view>
+  </view>
+</view>
+<navigator url="./editAdress/editAdress" class="addadress">
+  <view class="addtitle">添加地址</view>
+</navigator>

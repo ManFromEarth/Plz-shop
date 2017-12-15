@@ -1,0 +1,67 @@
+<swiper class="cover-swiper" indicator-dots>  
+  <swiper-item wx:for="{{detail.ImgGroup}}">
+    <image src="{{item}}" mode="aspectFit" style="width:516rpx;height:320rpx;"></image>
+  </swiper-item>
+</swiper>
+<view class="intro-wrap">
+  <view class="title">
+    <view class="tit-name">{{detail.Title}}</view>
+    <view class="tit-free" wx:if="{{detail.standardlist[currentSpec].Free&&detail.standardlist[currentSpec].Free!==''}}">{{'送'+detail.standardlist[currentSpec].Free}}</view>
+  </view>
+  <view class="effect">{{detail.Descript}}</view>
+  <view class="originalprice">{{detail.Tips}}</view>
+  <view class="choose">
+    <view class="spec">
+      <view class="spec-tit">选择规格:</view>
+      <view class="spec-wrap">
+        <view class="spec-cell {{index===currentSpec?'tapd-spec-cell':''}}" data-index="{{index}}" wx:for="{{detail.standardlist}}" catchtap="selectspec">
+          {{item.StandardName}}
+        </view>
+      </view>
+    </view>
+    <view class="spec-price">
+      <view class="">价格:</view>
+      <view class='spec-price-count' wx:if="{{detail.standardlist[currentSpec].OriginalPrice!==0}}">{{'¥原价'+detail.standardlist[currentSpec].OriginalPrice}}</view>
+      <view class="spec-price-active">{{'¥ '+detail.standardlist[currentSpec].Price}}</view>
+    </view>
+  </view>
+  <view class="spec-descript" wx:if="{{detail.standardlist[currentSpec].DesName}}">
+    <view>规格说明:</view>
+    <view class='spec-DesName'>{{detail.standardlist[currentSpec].DesName}}</view>
+  </view>
+</view>
+<view class="post">
+  <image src="../../../imgs/marks/post-icon.gif" style="width:28rpx;height:31rpx;margin-right:10rpx;"></image>
+  <view class="">{{'实付满'+postage+'免配送费'}}</view>
+</view>
+<view class="descript">
+  <view class="descript-head">规格</view>
+  <view class="descript-wrap">
+    <view class="descr-cell">
+      <view class="">重量：</view>
+      <view class="">{{detail.standardlist[currentSpec].PackagingMethod}}</view>
+    </view>
+    <view class="descr-cell">
+      <view class="">包装：</view>
+      <view class="">{{detail.standardlist[currentSpec].PackagingMethod}}</view>
+    </view>
+    <view class="descr-cell">
+      <view class="">保质期：</view>
+      <view class="">{{detail.standardlist[currentSpec].GuaranteePeriod}}</view>
+    </view>
+    <view class="descr-cell noborder">
+      <view class="">贮存方法：</view>
+      <view class="">{{detail.standardlist[currentSpec].StorageMethod}}</view>
+    </view>
+  </view>
+</view>
+<view class='placeview'></view>
+<view class="bottom">
+  <navigator class="gocar" open-type="switchTab" url="../../ticket/ticket">
+    <image src="../../../imgs/marks/detail-cart.png" style="width:42rpx;height:40rpx;"></image>
+  </navigator>
+  <button open-type="share" class="share-button" hover-class="none">
+    <image src="../../../imgs/icon/share-icon.png" style="width:100rpx;height:100rpx;"></image>
+  </button>
+  <view class="joincar" catchtap="joincar">加入购物车</view>
+</view>

@@ -1,0 +1,12 @@
+<view class="wrap">
+  <view class="search">
+    <icon type="search" size="17" />
+    <input type="text" placeholder="请输入你的地址" bindinput="inputtap" maxlength="60" />
+  </view>
+</view>
+<view class="result-wrap">
+  <view class="poi-cell" wx:for="{{poilist}}" data-index="{{index}}" bindtap="selectSin">
+    <view class="poi-title ">{{item.title}}</view>
+    <view class="poi-address ">{{item.address}}</view>
+  </view>
+</view>

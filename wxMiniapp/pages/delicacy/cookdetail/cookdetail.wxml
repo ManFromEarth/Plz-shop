@@ -1,0 +1,41 @@
+<swiper class="carouselCover"> 
+  <swiper-item wx:for="{{[1,2,3]}}">
+    <image src="../../../imgs/test/bookcover.jpg" style="width:750rpx;height:500rpx;"></image>
+  </swiper-item>
+</swiper>
+<view class="boookcontent">
+  <view class="cookhead">
+    <view class="cookname">{{cookdetail.MenuName}}</view>
+    <view class='cooktips'>
+      <view class="collectes">{{cookdetail.CollectNums+'人收藏'}}</view>
+      <view class='createTime'>{{cookdetail.CreateTime}}</view> 
+    </view>
+  </view>
+  <view class="publisher">
+    <image src="{{cookdetail.AvatarUrl}}" style="width:120rpx;height:120rpx;border-radius:50%;margin-right:20rpx;"></image>
+    <view>{{cookdetail.UserName}}</view>
+  </view>
+  <view class="Materials">
+    <view class="cell-title">用料</view>
+    <view class="cell-content">{{cookdetail.Materials}}</view>
+  </view>
+  <view class="procedure" wx:for="{{cookdetail.steplist}}">
+    <view class="cell-title">{{'步骤 '+(index+1)}}</view>
+    <view class="cell-content">{{item.Desc}}</view>
+  </view>
+</view>
+<view class="bottom">
+  <view wx:if="{{!IsCollect}}" class='wonder' bindtap="collect">
+    <image src="../../../imgs/marks/collect.gif" style="width:42rpx;height:40rpx;margin-right:8rpx;"></image>
+    <text>收藏</text>
+  </view>
+  <view wx:else class='wonder' bindtap="collect">
+    <image src="../../../imgs/marks/collected.gif" style="width:42rpx;height:40rpx;margin-right:8rpx;"></image>
+    <text>已收藏</text>
+  </view>
+  <button open-type="share" class="share-button" hover-class='none'>
+    <image src="../../../imgs/icon/share-icon.png" style="width:100rpx;height:100rpx;"></image>
+  </button>
+  <view class='shortnav' catchtap='shortnav'>一键购买所需食材</view>
+</view>
+<view></view>

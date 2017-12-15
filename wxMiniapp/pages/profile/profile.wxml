@@ -1,0 +1,63 @@
+<import src="../../common/toast/wetoast.wxml"/>
+<template is="wetoast" data="{{...__wetoast__}}"/>
+<view class="head">
+  <view class="user-info" bindtap="wxLogin">
+    <image src="{{User.avatarUrl}}" class="avatar" style="width:125rpx;height:125rpx;"></image>
+    <view class="user-wrap">
+      <view class="nickName">{{User.nickName}}</view>
+      <view class="vipType">{{UserCenter.UserLevel===''?'普通会员':UserCenter.UserLevel}}</view>
+    </view>
+  </view>
+  <view class='head-right'>
+    <navigator class='quickcell' url="./wallet/wallet" hover-class='none'>
+      <view class='quick-top'>
+        <text>{{UserCenter.Amount}}</text>
+        <text class='little'>元</text>
+      </view>
+      <view>现金兑换</view>
+    </navigator>
+    <navigator class='quickcell' url='./coupon/coupon' hover-class='none'>
+      <view class='quick-top'>
+        <text>{{UserCenter.HasCouponNums}}</text>
+        <text class='little'>个</text>
+      </view>
+      <view>优惠券</view>
+    </navigator>
+    <navigator class='quickcell' url='./vipCode/vipCode' hover-class='none'>
+      <view class='quick-top'>
+        <text>{{UserCenter.HasCodeNums}}</text>
+        <text class='little'>个</text>
+      </view>
+      <view>会员码</view>
+    </navigator>
+  </view>
+</view>
+<view class='invite prewarp'>
+  <view class='invite-left'>
+    <view class='invite-sign'>
+      <view class='left-black signtxt'>邀请</view>
+      <view class='left-red signtxt'>有礼</view>
+    </view>
+    <view>
+      <view>邀请新朋友</view>
+      <view>得优惠券</view>
+    </view>
+  </view>
+  <view class='invite-rig'>
+    <button class='gary sharebutton' open-type="share">立即邀请</button>
+    <image src="../../imgs/icon/arrow.gif" style="width:16rpx;height:24rpx;margin-left:10rpx;"></image>
+  </view>
+</view>
+<view class="prewarp">
+  <navigator url="./{{item.navto}}/{{item.navto}}" class="premenu {{index==menu.length-1?'noborder':''}}" wx:for="{{menu}}" hover-class="none">
+    <image src="../../imgs/icon/{{item.navto}}.gif" style="width:40rpx;height:42rpx;" mode=""></image>
+    <view class="title">{{item.title}}</view>
+    <view wx:if="{{index===0&&UserCenter.HasOrderNums&&UserCenter.HasOrderNums!==0}}" class="gary" style="margin-right:6rpx;">正在配送中</view>
+    <image src="../../imgs/icon/arrow.gif" style="width:16rpx;height:24rpx;"></image>
+  </navigator>
+</view>
+<view class="premenu noborder contact" hover-class="none" catchtap="contact">
+  <image src="../../imgs/icon/contact.gif" style="width:40rpx;height:42rpx;" mode=""></image>
+  <view class="title">联系客服</view>
+  <image src="../../imgs/icon/arrow.gif" style="width:16rpx;height:24rpx;"></image>
+</view>

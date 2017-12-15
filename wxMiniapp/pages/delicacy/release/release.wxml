@@ -1,0 +1,36 @@
+<view class="chooseImg">
+  <view class="" wx:if="{{!theTempFilePaths}}">
+    <image src="../../../imgs/marks/chooseImg.jpg" style="width:162rpx;height:162rpx;" bindtap="chooseImg"></image>
+    <view class="">添加效果图</view>
+  </view>
+  <view class="">
+    <image wx:for="{{theTempFilePaths}}" src="{{item}}" wx:if="{{theTempFilePaths}}" bindtap="chooseImg" style="width:300rpx;height:240rpx;"></image>
+  </view>
+</view>
+
+<form bindsubmit="submit">
+  <view class="edit">
+    <view class="edit-head">
+      <text>菜谱名</text>
+      <text class="edit-head-tips"></text>
+    </view>
+    <input type="text" class="edit-input" name="cookname" />
+  </view>
+  <view class="edit">
+    <view class="edit-head">
+      <text>主料</text>
+      <text class="edit-head-tips">(多个主料之间用空格隔开)</text>
+    </view>
+    <input type="text" class="edit-input" name="ingredients" />
+  </view>
+  <view class="edit">
+    <view class="edit-head">
+      <text>做法步骤</text>
+      <text class="edit-head-tips"></text>
+    </view>
+    <textarea bindblur="procedure" class='area-ipt' maxlength="1000"/>
+  </view>
+  <view style='margin:14rpx auto 0;text-align:center;'>
+  <button size="mini" form-type="submit" >提交</button>
+  </view>
+</form>

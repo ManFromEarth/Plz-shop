@@ -1,0 +1,38 @@
+page {
+  background-color: #e6e6e6;
+  padding-top: 20rpx;
+}
+
+.sin-cell {
+  height: 88rpx;
+  background-color: #fff;
+  border-bottom: 2rpx #ededed solid;
+  padding: 0 32rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.title-cell {
+  width: 30%;
+}
+
+.first-title-cell {
+  letter-spacing: 13rpx;
+}
+
+.submit {
+  width: 692rpx;
+  height: 86rpx;
+  margin: 40rpx auto;
+}
+
+.holdColor {
+  color: #858585;
+  flex: 1;
+}
+
+.gray {
+  color: #858585;
+  flex: 1;
+}

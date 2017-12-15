@@ -1,0 +1,28 @@
+<wxs src="../../utils/formTime.wxs" module="formTime" />
+<view class="head-wrap ">
+  <view class="cookControl">
+    <view class=" {{orderBy===1?'acsort':''}}" bindtap="loadnew">最新</view>
+    <view class="{{orderBy===2?'acsort':''}}" bindtap="loadmuch">收藏最多</view>
+  </view>
+  
+</view>
+<scroll-view scroll-y style="height:90%;" class="cooklist" bindscrolltolower="scrolltolower">
+  <navigator url="./cookdetail/cookdetail?MenuId={{item.MenuId}}" class="singlecook" wx:for="{{cookbooklist}}" wx:key="MenuId" hover-class='none'>
+    <image src="../../imgs/test/cookCoverimg.jpg" style="width:240rpx;height:200rpx;"></image>
+    <view class="intro">
+      <view class="cookname">{{item.MenuName}}</view>
+      <view class="ingredients">{{item.Materials}}</view>
+      <view class="publisher">
+        <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erQeNux98IicPicdl0Zjx6MDM7oyNXM2vW2BpjghCdELQo5wLaj5uiahr2hOwheje4Z1Cy4YiafoUjqyA/0"></image>
+        <view class="">tiantiansong</view>
+      </view>
+      <view class="garde">
+        <view class="hascollected">{{item.CollectNums+'人收藏'}}</view>
+        <view class='timemark'>{{formTime(item.CreateTime)}}</view>
+      </view>
+    </view>
+  </navigator>
+</scroll-view>
+<navigator url="./release/release" class="release" hover-class='none'>
+  <image src="../../imgs/marks/releaseCook.gif" style="width:94rpx;height:94rpx;"></image>
+</navigator>

@@ -1,0 +1,144 @@
+ page{   
+   background-color: #F5F5F5;   
+ }
+.cover-swiper {
+  height: 420rpx;
+  background-color: #fff;
+}
+.cover-swiper swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  height: 60rpx;
+  display: flex;
+  margin-bottom: 4rpx;
+  align-items: center;
+}
+.bottom {
+  height: 96rpx; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+}
+.choose {
+  margin-top: 4rpx;
+  color: #969696
+}
+.spec-wrap {
+  display: flex;
+  margin-top: 4rpx;
+}
+.spec-descript{
+  display: flex;
+  color:  #969696;
+  margin-left: 6rpx;
+}
+.spec-DesName{
+  margin-left: 8rpx;
+}
+.spec-price{
+display: flex;
+}
+.spec-price-active{
+  margin-left: 20rpx;
+}
+.spec-price-count{
+  text-decoration: line-through;
+  color: #969696;
+  margin-left: 12rpx;
+}
+.spec-cell{
+  border: 1rpx #969696 solid;
+  padding: 6rpx 10rpx;
+  border-radius: 8rpx;
+  margin-bottom: 10rpx;
+  margin-right: 20rpx;
+}
+.tapd-spec-cell{
+  background-color: #FF4991;
+  color: #fff;
+}
+.post {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  border-top: 2rpx #e9e9e9 solid;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  justify-content: center;
+}
+.joincar {
+  background-color: #ff4891;
+  line-height: 96rpx;
+  text-align: center;
+  color: #fff;
+  flex: 1;
+}
+.gocar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160rpx;
+}
+.share-button{
+  width: 160rpx;
+  margin: 0;
+  padding: 0;
+}
+.share-button::after{
+  content: none;
+}
+.intro-wrap{
+  padding: 0 30rpx 20rpx;
+  background-color: #fff;
+}
+.tit-name{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-right: 30rpx;
+  line-height: 30rpx;
+}
+.tit-free{
+  color: #969696;
+}
+.effect{
+  margin-top: 6rpx;
+  color: #969696;
+  
+}
+.originalprice {
+  display: inline-block;
+  margin-top: 10rpx;
+  color: #969696;
+  border: 1rpx #FF4991 solid;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  padding: 4rpx 6rpx;
+}
+.descript{
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+.descript-head{
+  font-size: 28rpx;
+  padding: 20rpx 0 10rpx;
+}
+.descr-cell {
+  display: flex;
+  color: #969696;
+  height: 68rpx;
+  align-items: center;
+  border-bottom: 1rpx #E5E5E5 solid;
+}
+.placeview{
+  height: 96rpx;
+  background-color: #fff;
+}
+.noborder{
+  border-bottom: none;
+}

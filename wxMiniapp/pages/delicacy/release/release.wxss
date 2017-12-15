@@ -1,0 +1,29 @@
+.chooseImg {
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2rpx #e6e6e6 solid;
+  border-top: 2rpx #e6e6e6 solid;
+}
+.edit-head{
+  height: 60rpx;
+  background-color: #F2F2F2;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+}
+.edit-head-tips{
+  font-size: 28rpx;
+  color: #808080;
+  margin-left: 20rpx;
+}
+.edit input{
+  height: 58rpx;
+  padding: 0 10rpx;
+}
+.area-ipt{
+  padding: 10rpx;
+  border: 1rpx #e6e6e6 solid;
+  width: 100%;
+  box-sizing: border-box;
+}

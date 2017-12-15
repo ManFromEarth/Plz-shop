@@ -1,0 +1,55 @@
+page { 
+  background-color: #f5f5f5;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.adress-wrap {
+  background-color: #fff;
+  font-size: 30rpx;
+}
+.sin-adress {
+  border-bottom: 2rpx #e5e5e5 solid;
+  margin: 0 28rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+}
+.nobor{
+  border-bottom: none;
+}
+.sin-adress-lef {
+  flex: 1;
+}
+.editad {
+  width: 124rpx;
+  height: 58rpx;
+  margin-left: 32rpx;
+  border-left: 2rpx #e5e5e5 solid;
+  line-height: 58rpx;
+  text-align: center;
+  color: #969696;
+}
+.behw{
+  color: #909090;
+  margin-top: 18rpx;
+}
+.addadr{
+  width: 690rpx;
+  height: 90rpx;
+  border: 2rpx #E5E5E5 solid;
+  border-radius: 10rpx;
+  margin: 40rpx auto 0;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+}
+.noadress {
+  height: 140rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f7f7f;
+}

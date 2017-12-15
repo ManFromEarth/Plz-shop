@@ -1,0 +1,13 @@
+<view class="adress-wrap">   
+  <view wx:for="{{adress}}" class="sin-adress {{index==adress.length-1?'nobor':''}}">
+    <view class="sin-adress-lef" data-eq='{{index}}' catchtap='chooseadress'>
+      <view class="topw">{{item.City+' '+item.Pcadress+' '+item.DetailAddress}}</view>
+      <view class="behw">{{item.UserName+' '+item.TelNumber}}</view>
+    </view>
+    <navigator class='editad' url='../../profile/adress/editAdress/editAdress?name={{item.UserName}}&tel={{item.TelNumber}}&city={{item.City}}&adress={{item.Pcadress}}&Housenumber={{item.DetailAddress}}&Id={{item.Id}}'>编辑</navigator>
+  </view>
+</view>
+<view class="noadress" wx:if="{{adress.length==0}}">
+  你还没有收货地址，请添加地址
+</view>
+<navigator class='addadr' url='../../profile/adress/editAdress/editAdress' open-type='navigate'>添加地址</navigator>

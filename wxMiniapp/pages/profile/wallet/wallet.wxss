@@ -1,0 +1,103 @@
+page { 
+  background-color: #f5f5f5;
+}
+
+.balance {
+  height: 240rpx;
+  background-color: #fff;
+  border-top: 1rpx #e5e5e5 solid;
+  border-bottom: 2rpx #e5e5e5 solid;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.balance-title {
+  margin-top: 34rpx;
+}
+
+.balance-nums {
+  font-size: 80rpx;
+  color: #ff4a91;
+  margin-top: 24rpx;
+}
+
+.sum-title {
+  height: 76rpx;
+  color: #999;
+  line-height: 76rpx;
+  margin-left: 30rpx;
+}
+
+.sum {
+  background-color: #fff;
+  padding: 36rpx 30rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sum-cell {
+  width: 330rpx;
+  height: 106rpx;
+  border-radius: 14rpx;
+  border: 1rpx #dfdfdf solid;
+  display: flex;
+  margin-bottom: 18rpx;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  color: #ff4a91;
+}
+
+.active-sum-cell {
+  border: 2rpx #ff65a2 solid;
+  font-weight: bold;
+}
+
+.sum-cell-in {
+  font-size: 32rpx;
+}
+
+.sum-cell-away {
+  font-size: 24rpx;
+}
+
+.putin-button {
+  margin: 80rpx 20rpx 20rpx 20rpx;
+  background-color: #fff;
+  font-size: 34rpx;
+  color: #ff4a91;
+}
+
+.exMoney {
+  height: 86rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx #e5e5e5 solid;
+}
+
+.code-input {
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  margin: 0 20rpx;
+  padding: 0 20rpx;
+  flex: 1;
+}
+
+.ex-button {
+  margin-right: 30rpx;
+}
+.vipGift{
+  display: flex;
+  background-color: #fff;
+ padding-bottom: 10rpx;
+ padding-right: 20rpx;
+ justify-content: flex-end;
+  color: #ff4a91;
+}
+.vipGift-desc{
+margin-left: 20rpx;
+}

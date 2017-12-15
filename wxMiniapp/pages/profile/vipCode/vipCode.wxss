@@ -1,0 +1,39 @@
+page{ 
+  background-color: #F5F5F5;
+}
+.holder{
+  margin-top: 400rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #828182;
+}
+.holderImg{
+  width: 110rpx;
+  height: 80rpx;
+  margin-bottom: 40rpx;
+}
+.codecell{
+  display: flex;
+  height: 80rpx;
+  background-color: #fff;
+  align-items: center;
+  padding:0 30rpx;
+  border-top: 1rpx #F5F5F5 solid;
+  color: #EC5790;
+
+}
+.vipTips{
+  background-color: #fff;
+  display: flex;
+  height: 50rpx;
+  align-items: center;
+  flex-flow: row-reverse;
+  padding-right: 30rpx;
+  font-size: 24rpx;
+   border-top: 1rpx #F5F5F5 solid;
+}
+.Code{
+  flex: 1;
+}

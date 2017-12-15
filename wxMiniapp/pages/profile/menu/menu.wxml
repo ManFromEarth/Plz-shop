@@ -1,0 +1,11 @@
+<navigator wx:for="{{MenuList}}" class="menucell" url="../../delicacy/cookdetail/cookdetail?MenuId={{item.MenuId}}">
+  <image class='menucover' src='../../../imgs/test/cookCoverimg.jpg'></image>
+  <view class='menuRight'>
+    <view class='menuName'>{{item.MenuName}}</view>
+    <view class='menu-desc'>
+      <view>天天宋</view>
+      <image class='avatar' src='../../../imgs/test/dog.jpg'></image>
+      <view>{{item.CollectNums+'人点赞'}}</view>
+    </view>
+  </view>
+</navigator>

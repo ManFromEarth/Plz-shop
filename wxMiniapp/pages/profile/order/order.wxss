@@ -1,0 +1,155 @@
+page {
+  background-color: #fafafa;
+}
+
+.order-head {
+  display: flex;
+  align-items: center;
+}
+
+.product-cell {
+  display: flex;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  align-items: center;
+}
+
+.middle-wrap {
+  margin-left: 76rpx;
+}
+
+.purchased {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+}
+
+.orderid {
+  display: flex;
+}
+
+.regoods {
+  border: 2rpx #ff6953 solid;
+  border-radius: 6rpx;
+}
+
+.deltOrder {
+  width: 140rpx;
+  height: 56rpx;
+  border: 2rpx #ff6953 solid;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+
+.gift {
+  flex: 1;
+  margin-left: 76rpx;
+}
+
+.geat {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.trupay {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.timemark {
+  flex: 1;
+}
+
+.Status-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.product-list {
+  color: #898989;
+  margin-top: 16rpx;
+}
+
+.timemark-cell {
+  color: #acacac;
+}
+
+.product-No {
+  margin-left: 10rpx;
+}
+
+.payway {
+  margin: 0 4rpx;
+}
+
+.no_order {
+  margin-top: 280rpx;
+  width: 190rpx;
+  height: 236rpx;
+}
+
+.blank-page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.goindex {
+  padding: 12rpx;
+  border: 2rpx #363636 solid;
+  border-radius: 8rpx;
+  margin-top: 14rpx;
+}
+
+.blank-desc {
+  color: #ccc;
+  margin-top: 30rpx;
+}
+.cleanUp {
+  height: 50rpx;
+  background-color: #fff;
+  padding-right: 6rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1rpx #eaeaea solid;
+}
+.product-name {
+  width: 30%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.product-Standar {
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.product-No {
+  width: 10%;
+}
+.product-Price{
+  
+}
+.product-amount {
+}
+.UsedCash {
+  margin-top: 8rpx;
+}
+
+.UsedCoupon {
+  margin-top: 8rpx;
+}
+
+.control-button {
+  padding: 8rpx 10rpx;
+  border: 2rpx #ff6953 solid;
+  border-radius: 6rpx;
+  margin-left: 8rpx;
+}

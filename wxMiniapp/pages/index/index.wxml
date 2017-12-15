@@ -1,0 +1,64 @@
+<view class="pagehead">    
+  <view class="top">
+    <image class="timeline" src="../../imgs/marks/twoHours.gif" style="width:112rpx;height:29rpx;display:block;"></image>
+    <navigator url="./delive/delive" open-type='navigate' class="position" hover-class="none">
+      <view class="currentp">{{activeAdress}}</view>
+      <view class="barrow"></view>
+    </navigator>
+  </view>
+  <view class="shoptabs">
+    <view id="{{index}}" class="tabcell {{currentC==index?'activetap':''}}" wx:for="{{tab}}" bindtap="tapchangge">{{item.Cname}}</view>
+  </view>
+</view>
+<swiper class="swiper" current="{{currentC}}" bindchange="swiperchange">
+  <swiper-item wx:for="{{tab}}">
+    <scroll-view scroll-y="true" class="scroll">
+      <swiper style="height:280rpx;">
+        <swiper-item wx:for="{{[1,2]}}">
+          <image src="../../imgs/test/swiper.jpg" style="height:280rpx;width:100%;display:block;"></image>
+        </swiper-item>
+      </swiper>
+      <view class="bolckR"></view>
+      <navigator class="singelP" wx:for="{{item.productlist}}" wx:key="Pid" hover-class="none" open-type="navigate" url="./detail/detail?pid={{item.Pid}}">
+        <image src="{{item.ImgCover}}"  class='ImgCover'></image>
+        <view class="sinR">
+          <view class="iName">{{item.Title}}</view>
+          <view class="iDetail">{{item.Descript}}</view>
+          <view class="iTips">
+            <view class="iTipscell">{{item.Tips}}</view>
+          </view>
+          <view class="iPrice">
+            <view class="priceL">专享价¥</view>
+            <view class="priceR">{{item.Price}}</view>
+          </view>
+        </view>
+        <view class="buymark" catchtap="addcart" data-index="{{index}}">
+          <image class="cart" src="../../imgs/icon/buy-button.gif" style="height:66rpx; width:66rpx;display:block"></image>
+        </view>
+      </navigator>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+<view class="mask" wx:if="{{maskable}}" catchtap='hiddenpop'></view>
+<view class="pop-spec" hidden="{{popspec}}">
+  <view class='pop-spec-top'>
+    <view class="pop-title">{{tab[currentC].productlist[currentEq].Title}}</view>
+    <view catchtap='hiddenpop' class='chasign-wrap'>
+      <view class='chasign'></view>
+    </view>
+    <view class='pop-spec-desc'>规格：</view>
+    <view class="pop-spec-wrap">
+      <view wx:for="{{tab[currentC].productlist[currentEq].standardlist}}" data-index="{{index}}" class="pop-spec-cell {{index==currrntSpec?'taped':''}}" catchtap="selectspec">
+        <view class="">{{item.StandardName}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='pop-bot'>
+    <view class='pop-price'>
+      <view class='symbol'>￥</view>
+      <view class='pop-price-txt'>{{tab[currentC].productlist[currentEq].standardlist[currrntSpec].Price}}</view>
+    </view>
+    <view class="choose-button" catchtap="joinCart">选好了</view>
+  </view>
+</view>
+<image class="popup" wx:if="{{popup}}" src='../../imgs/test/popupimg.jpg' style='width:558rpx;height:820rpx;' catchtap='tapcard'></image>

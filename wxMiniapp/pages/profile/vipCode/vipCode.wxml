@@ -1,0 +1,11 @@
+<view wx:if="{{vipCode.length!==0}}">
+  <view wx:for="{{vipCode}}" class='codecell'>
+    <view class='Code'>{{item.Code}}</view>
+    <view>{{item.Remeark}}</view>
+  </view>
+  <view class='vipTips'>以上会员专属活动请前往永康市金品大厦8楼领取</view>
+</view>
+<view wx:else class='holder'>
+  <image src='../../../imgs/holder/noCoupon.png' class='holderImg'></image>
+  <view>你还没有会员码哦</view>
+</view>

@@ -1,0 +1,108 @@
+
+.release { 
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+  opacity: .4;
+}
+
+.head-wrap {
+  box-sizing: border-box;
+  display: flex;
+  height: 10%;
+  align-items: center;
+  padding: 0 40rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx #e5e5e3 solid;
+  background-color: #fff;
+}
+
+.cookControl {
+  width: 200rpx;
+  justify-content: space-between;
+  display: flex;
+}
+
+.search-cook {
+  height: 40rpx;
+  width:230rpx;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  justify-content: center;
+}
+
+.search-cook icon {
+  margin-right: 10rpx;
+}
+
+.search-cook text {
+  color: #9f9f9e;
+}
+
+.cooklist {
+  height: 90%;
+  box-sizing: border-box;
+}
+
+.singlecook {
+  height: 260rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx #e5e5e3 solid;
+  padding: 0 40rpx;
+}
+
+.intro {
+  height: 180rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 30rpx;
+}
+
+.garde {
+  display: flex;
+  margin-top: 12rpx;
+  align-items: flex-end;
+  font-size: 22rpx;
+  line-height: 22rpx;
+}
+
+.cookname {
+  font-size: 32rpx;
+}
+
+.ingredients {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.publisher {
+  font-size: 24rpx;
+  color: #c0c0bd;
+  margin-top: 12rpx;
+  display: flex;
+  align-items: center;
+}
+.publisher image{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+
+}
+
+.score {
+  font-size: 24rpx;
+  margin-right: 22rpx;
+}
+
+.hascollected {
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.acsort{
+  color: #939393;
+}

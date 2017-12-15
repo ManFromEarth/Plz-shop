@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/index/delive/delive",
+    "pages/delicacy/delicacy",
+    "pages/delicacy/release/release",
+    "pages/delicacy/searchcook/searchcook",
+    "pages/delicacy/cookdetail/cookdetail",
+    "pages/ticket/ticket",
+    "pages/ticket/pay/pay",
+    "pages/ticket/chooseCoupon/chooseCoupon",
+    "pages/profile/profile",
+    "pages/profile/order/order",
+    "pages/profile/adress/adress",
+    "pages/profile/wallet/wallet",
+    "pages/profile/adress/editAdress/editAdress",
+    "pages/profile/adress/searchpoi/searchpoi",
+    "pages/profile/coupon/coupon",
+    "pages/profile/menu/menu",
+    "pages/profile/vipCode/vipCode"
+    
+  ],
+  "window": {
+    "backgroundColor": "#E6E6E6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "品丽州生鲜",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#9C9C9C",
+    "selectedColor": "#9C9C9C",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./imgs/tabs/1b.jpg",
+        "selectedIconPath": "./imgs/tabs/1s.jpg"
+      },
+      {
+        "pagePath": "pages/delicacy/delicacy",
+        "text": "美食",
+        "iconPath": "./imgs/tabs/2b.jpg",
+        "selectedIconPath": "./imgs/tabs/2s.jpg"
+      },
+      {
+        "pagePath": "pages/ticket/ticket",
+        "text": "购物车",
+        "iconPath": "./imgs/tabs/3b.jpg",
+        "selectedIconPath": "./imgs/tabs/3s.jpg"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "./imgs/tabs/4b.jpg",
+        "selectedIconPath": "./imgs/tabs/4s.jpg"
+      }
+    ]
+  }
+ 
+}
