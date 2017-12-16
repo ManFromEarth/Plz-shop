@@ -1,15 +1,17 @@
-## 品丽州生鲜商城微信小程序前端
+### 品丽州生鲜商城微信小程序前端
+        接受
+        项目描述：
+* 是的
+* 地方
 
-* FDF
-* FDF
-* ge
+### 品丽州生鲜商城后台管理
+        接受
+        项目描述：
+* 是的
+* 地方
 
 
-
-
-
-
-###### 前端项目截图
+##### 前端项目截图
 <image src="./app-screenshots/IMG_001.jpg"  width=375px height=667px/>    <img src="./app-screenshots/IMG_002.jpg" width=375px height=667px/>
 
 <image src="./app-screenshots/IMG_003.jpg" width=375px height=667px />    <img src="./app-screenshots/IMG_004.jpg" width=375px height=667px/>
@@ -29,7 +31,7 @@
 
 
 
-###### 后天管理项目截图
+##### 后天管理项目截图
 <image src="./admin-screenshots/QQ截图001.png" width=960px height=475px />
 
 <img src="./admin-screenshots/QQ截图002.png" width=960px height=475px />
