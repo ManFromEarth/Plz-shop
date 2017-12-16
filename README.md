@@ -19,13 +19,9 @@
 * 使用element UI使管理系统页面风格统一，观感良好。
 
 ##### 效果演示
-###### 请微信扫以下二维码
-![二维码](./app-screenshots/plz-qrcode.jpg)
+###### 请微信扫以下二维码或微信搜索 ```品丽州食品```
 
-
-
-
-
+<img src="./app-screenshots/plz-qrcode.jpg" width=200 height=200></img>
 
 
 
