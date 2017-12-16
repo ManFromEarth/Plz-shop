@@ -1,22 +1,15 @@
+![logo](./admin-screenshots/plz-logo.png)
 ### 品丽州生鲜商城微信小程序前端
-        接受
+理发店辅导费的地方第三方地方的地方
+> sdsdsd
+> sdsdsd
+> sdsdsd
+> sdsdsd
+> sdsdsd
 
-
-
-
-        项目描述：
-* 是的
-* 地方
 
 ### 品丽州生鲜商城后台管理
-        接受
 
-
-
-        
-        项目描述：
-* 是的
-* 地方
 
 
 ##### 前端项目截图
